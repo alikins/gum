@@ -1,0 +1,31 @@
+gum is a tool to manage git repos. 
+
+The intended useage is for a project to include
+a gum.config that includes all git repos that fork
+the project. 
+
+Since the project can have many people working on
+forks of the code, the tool is designed to make it
+easier to keep track of those repos. 
+
+The upstream maintainer can maintain the gum.config
+file with the available repos (merging the configs
+from forks as needed). 
+
+Useage:
+
+To see a list of other repos with this project ("remotes"
+in git terms). 
+
+	gum -l
+
+To see a list of other branches in the other repos (remote branches
+in git terms).
+
+	gum -L
+
+To add all of the remote repos and branches:
+	
+	gum -A
+
+
